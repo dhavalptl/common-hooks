@@ -1,0 +1,33 @@
+{
+  "name": "custom-hooks-2",
+  "private": true,
+  "version": "0.0.2",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/customhooks.umd.cjs",
+  "module": "./dist/customhooks.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/customhooks.js",
+    "require": "./dist/customhooks.umd.cjs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.38",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4",
+    "vite-plugin-dts": "^2.3.0"
+  },
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
